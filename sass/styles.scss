@@ -1,0 +1,66 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+}
+
+.name {
+	display: table;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: bgcolorshift 30s infinite;
+	-moz-animation:    bgcolorshift 30s infinite;
+ 	-ms-animation:     bgcolorshift 30s infinite;
+    -o-animation:      bgcolorshift 30s infinite;
+
+    &:after {
+    	content: "Anna Bauer";
+    	display: table-cell;
+			vertical-align: middle;
+			font-family: "etica-display", "alternate-gothic-no-1-d", sans-serif;
+			font-style: normal;
+			font-weight: 200;
+			font-size: 1.950em;
+			line-height: 1.1em;
+    }
+}
+
+@-webkit-keyframes bgcolorshift {
+	0%   { background-color: #ed4f83; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ed4f83; }
+}
+@-moz-keyframes bgcolorshift {
+	0%   { background-color: #ed4f83; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ed4f83; }
+}
+@-ms-keyframes bgcolorshift {
+	0%   { background-color: #ed4f83; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ed4f83; }
+}
+@-o-keyframes bgcolorshift {
+	0%   { background-color: #ed4f83; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ed4f83; }
+}
